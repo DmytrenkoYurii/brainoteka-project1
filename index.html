@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Music</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="javascript/scrypt.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header"><img src="images/head.jpg" alt="Head"/></div>
+            <div id="content">   
+                <div id="nav">
+                    <ul>
+                        <li><a title="На головну" href="index.html">Головна</a></li>
+                        <li><a title="Lana Del Rey" href="Lana.html">Lana Del Rey</a></li>
+                        <li><a title="Adele" href="Adele.html">Adele</a></li>
+                        <li><a title="Rihanna" href="Rihanna.html">Rihanna</a></li>
+                        <li><a title="Beyonce" href="Beyonce.html">Beyonce</a></li>
+                    </ul>
+                    <div id="map"><img src="images/map.jpg" alt="Карта"/></div>
+                </div>
+                <div id="main">
+                    <table>
+                        <tr>
+                            <th id="main_title" colspan="4"><h1>Головна</h1></th>
+                        </tr>
+                        <tr>
+                            <td class="small_card">
+                                <img src="images/foto1.gif" alt="Lana"/>
+                                <div class="content">
+                                <small>April 13</small>
+                                <h2>Lana Del Rey</h2>
+                                <p>BOK Center, Tusla, OK</p>
+                                <a title="Lana" href="Lana.html">Перейти</a>
+                                </div>
+                            </td>
+                            <td class="small_card">
+                                <img src="images/foto2.gif" alt="Adele"/>
+                                <div class="content">
+                                <small>July 20</small>
+                                <h2>Adele</h2>
+                                <p>Comerica Parc, Detroit, MI</p>
+                                <a title="Adele" href="Adele.html">Перейти</a>
+                                </div>
+                            </td>
+                            <td class="small_card">
+                                <img src="images/foto3.gif" alt="Rihanna"/>
+                                <div class="content">
+                                <small>April 20</small>
+                                <h2>Rihanna</h2>
+                                <p>Peace Concert Hall, Greenville, SC USA</p>
+                                <a title="Rihanna" href="Rihanna.html">Перейти</a>
+                                </div>
+                            </td>
+                            <td class="small_card">
+                                <img src="images/foto4.gif" alt="Beyonce"/>
+                                <div class="content">
+                                <small>April 18</small>
+                                <h2>Beyonce</h2>
+                                <p>First Niagara Center, Buffalo, NY</p>
+                                <a title="Beyonce" href="Beyonce.html">Перейти</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bid_card" colspan="4">
+                                <img src="images/form.png" alt="Форма"/>
+                                <form action="/Home/order" method="post">
+                                    <fieldset>
+                                        <legend>Оформлення замовлення</legend>
+                                        <input type="text" name="Name" placeholder=" Введіть ваше ім'я" required/><br/>
+                                        <input type="tel" placeholder="380-(xx)-(xxx)-(xx)-(xx)" required pattern="380-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"/><br/>
+                                        <select name="Artist">
+                                            <option value="Lana Del Rey">Lana Del Rey</option>
+                                            <option value="Adele">Adele</option>
+                                            <option value="Rihanna">Rihanna</option>
+                                            <option value="Beyonce">Beyonce</option>
+                                        </select><br/>
+                                        <input type="submit"/>
+                                    </fieldset>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="footer">
+            </div>
+        </div>
+    </body>
+</html>
